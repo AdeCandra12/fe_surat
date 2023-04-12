@@ -9,10 +9,15 @@ function isiRow(value) {
     let content = 
     isiTabel.replace("#NOSURAT#", value.no_surat)
             .replace("#STATUS#", value.status_surat.keterangan)
-            // .replace("#PERIHAL#", value.identitas.no_hp)
-            // .replace("#KODEPOS#", value.identitas.prodi.nama)
-            // .replace("#PENGIRIM#", value.identitas.jurusan)
-            // .replace("#PENERIMA#", value.status_keuangan.total_pembayaran)
+            .replace("#PERIHAL#", value.perihal)
+            .replace("#KDDAERAH#", value.id_pos.kode_daerah)
+            .replace("#NDAERAH#", value.id_pos.nama_daerah)
+            .replace("#NPENGIRIM#", value.pengirim_srt.nama_pengirim)
+            .replace("#ALKIRIM#", value.pengirim_srt.alamat)
+            .replace("#TGLKIRIM#", value.pengirim_srt.tgl_kirim)
+            .replace("#NPENERIMA#", value.penerima_srt.nama_penerima)
+            .replace("#ALTERIMA", value.penerima_srt.alamat)
+            .replace("#TGLTERIMA#", value.penerima_srt.tgl_terima)
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
         addInner("iniTabel", content);
