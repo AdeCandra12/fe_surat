@@ -11,7 +11,7 @@ function isiRow(value) {
             .replace("#STATUS#", value.status_surat.keterangan)
             .replace("#PERIHAL#", value.perihal)
             .replace("#KDDAERAH#", value.id_pos.kode_daerah)
-            .replace("#NDAERAH#", value.id_pos.nama_daerah)
+            .replace("#NDAERAH#", value.id_pos.nama_dareah)
             .replace("#NPENGIRIM#", value.pengirim_srt.nama_pengirim)
             .replace("#ALKIRIM#", value.pengirim_srt.alamat)
             .replace("#TGLKIRIM#", value.pengirim_srt.tgl_kirim)
