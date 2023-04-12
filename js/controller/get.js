@@ -22,3 +22,20 @@ function isiRow(value) {
             .replace(/#WARNALOGO#/g, getRandomColorName());
         addInner("iniTabel", content);
 }
+
+
+export function isiTabelDis(results) {
+    results.forEach(isiRow2);
+}
+function isiRow2(value) {
+    let content = 
+    isiTabel.replace("#KDDIS#", value.kode_disposisi)
+            .replace("#TGLDIS#", value.tgl_disposisi)
+            .replace("#NPENERIMA#", value.penerima_surat.nama_penerima)
+            .replace("#ALTERIMA", value.penerima_surat.alamat)
+            .replace("#TGLTERIMA#", value.penerima_srt.tgl_terima)
+            .replace("#STATUS#", value.status.disposisi.keterangan)
+            .replace("#WARNA#", getRandomColor())
+            .replace(/#WARNALOGO#/g, getRandomColorName());
+        addInner("iniTabel", content);
+}
