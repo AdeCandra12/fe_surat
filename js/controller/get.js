@@ -37,5 +37,5 @@ function isiRow2(value) {
             .replace("#STATUS#", value.status.disposisi.keterangan)
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
-        addInner("iniTabelDis", content);
+        addInner("iniTabel2", content);
 }
