@@ -8,7 +8,7 @@ export function isiTableSurat(results) {
 function isiRow(value) {
     let content = 
     isiTabel.replace("#NOSURAT#", value.no_surat)
-            .replace("#STATUS#", value.status_surat)
+            .replace("#STATUS#", value.status_surat.keterangan)
             // .replace("#PERIHAL#", value.identitas.no_hp)
             // .replace("#KODEPOS#", value.identitas.prodi.nama)
             // .replace("#PENGIRIM#", value.identitas.jurusan)

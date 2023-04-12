@@ -12,9 +12,6 @@ export let isiTabel =
                         </div>
                         <div>
                           <p class="font-semibold">#NOSURAT#</p>
-                          <p class="text-xs text-gray-600 dark:text-gray-400">
-                            10x Developer
-                          </p>
                         </div>
                       </div>
                     </td>
@@ -27,14 +24,41 @@ export let isiTabel =
                     <td class="px-4 py-3 text-sm">
                       #PERIHAL#
                     </td>
-                    <td class="px-4 py-3 text-sm">
-                      #KODEPOS#
+                    <td class="px-4 py-3">
+                      <div class="flex items-center text-sm">
+                        <div>
+                          <p class="font-semibold">#KDDAERAH#</p>
+                          <p class="text-xs text-gray-600 dark:text-gray-400">
+                            #NDAERAH#
+                          </p>
+                        </div>
+                      </div>
                     </td>
-                    <td class="px-4 py-3 text-sm">
-                      #PENGIRIM#
+                    <td class="px-4 py-3">
+                      <div class="flex items-center text-sm">
+                        <div>
+                          <p class="font-semibold">#NPENGIRIM#</p>
+                          <p class="text-xs text-gray-600 dark:text-gray-400">
+                            #ALKIRIM#
+                          </p>
+                          <p class="text-xs text-gray-600 dark:text-gray-400">
+                          #TGLKIRIM#
+                        </p>
+                        </div>
+                      </div>
                     </td>
-                    <td class="px-4 py-3 text-sm">
-                      #PENERIMA#
+                    <td class="px-4 py-3">
+                      <div class="flex items-center text-sm">
+                        <div>
+                          <p class="font-semibold">#NPENERIMA#</p>
+                          <p class="text-xs text-gray-600 dark:text-gray-400">
+                            #ALTERIMA#
+                          </p>
+                          <p class="text-xs text-gray-600 dark:text-gray-400">
+                          #TGLTERIMA#
+                        </p>
+                        </div>
+                      </div>
                     </td>
                   </tr>
 `
