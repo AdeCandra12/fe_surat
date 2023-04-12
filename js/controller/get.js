@@ -1,6 +1,6 @@
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
-import { isiTabel, isiTabelDis} from "../temp/table.js";
+import { isiTabel, isiTabelDis } from "../temp/table.js";
 
 export function isiTableSurat(results) {
     results.forEach(isiRow);
@@ -24,12 +24,12 @@ function isiRow(value) {
 }
 
 
-export function isiTabelDis(results) {
+export function isi_TabelDis(results) {
     results.forEach(isiRow2);
 }
 function isiRow2(value) {
     let content = 
-    isiTabel.replace("#KDDIS#", value.kode_disposisi)
+    isiTabelDis.replace("#KDDIS#", value.kode_disposisi)
             .replace("#TGLDIS#", value.tgl_disposisi)
             .replace("#NPENERIMA#", value.penerima_surat.nama_penerima)
             .replace("#ALTERIMA", value.penerima_surat.alamat)
