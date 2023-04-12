@@ -1,6 +1,6 @@
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
-import { isiTabel} from "../temp/table.js";
+import { isiTabel, isiTabelDis} from "../temp/table.js";
 
 export function isiTableSurat(results) {
     results.forEach(isiRow);
@@ -37,5 +37,5 @@ function isiRow2(value) {
             .replace("#STATUS#", value.status.disposisi.keterangan)
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
-        addInner("iniTabel2", content);
+        addInner("iniTabelDis", content);
 }
