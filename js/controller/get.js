@@ -34,7 +34,7 @@ function isiRow2(value) {
             .replace("#NPENERIMA#", value.penerima_surat.nama_penerima)
             .replace("#ALTERIMA", value.penerima_surat.alamat)
             .replace("#TGLTERIMA#", value.penerima_surat.tgl_terima)
-            .replace("#STATUS#", value.status.disposisi.keterangan)
+            .replace("#STATUS#", value.status_disposisi.keterangan)
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
         addInner("iniTabelDis", content);
